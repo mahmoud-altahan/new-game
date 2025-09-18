@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://ds8qovpi7gutg"]
+
+[ext_resource type="Texture2D" uid="uid://c4n3p4qr24024" path="res://assets/imgs/B_Button68.png" id="1_i0iro"]
+[ext_resource type="Texture2D" uid="uid://biittql875ngy" path="res://assets/imgs/B_Button65.png" id="2_47ufm"]
+[ext_resource type="Texture2D" uid="uid://srnwo00avfkd" path="res://assets/imgs/B_Button47.png" id="3_2ar6e"]
+[ext_resource type="Texture2D" uid="uid://ccnuiuxvfr0gp" path="res://assets/B_Button14.png" id="4_47ufm"]
+
+[node name="MobileControls" type="CanvasLayer"]
+
+[node name="left" type="TouchScreenButton" parent="."]
+texture_filter = 1
+position = Vector2(4, 505)
+scale = Vector2(5.25, 5.25)
+texture_normal = ExtResource("1_i0iro")
+texture_pressed = ExtResource("1_i0iro")
+passby_press = true
+action = "left"
+
+[node name="right" type="TouchScreenButton" parent="."]
+texture_filter = 1
+position = Vector2(208, 505)
+scale = Vector2(5.25, 5.25)
+texture_normal = ExtResource("2_47ufm")
+texture_pressed = ExtResource("2_47ufm")
+passby_press = true
+action = "right"
+
+[node name="jump" type="TouchScreenButton" parent="."]
+texture_filter = 1
+position = Vector2(1040, 505)
+scale = Vector2(5.5, 5.5)
+texture_normal = ExtResource("3_2ar6e")
+texture_pressed = ExtResource("3_2ar6e")
+passby_press = true
+action = "jump"
+
+[node name="pause" type="TouchScreenButton" parent="."]
+texture_filter = 1
+position = Vector2(526, 0)
+scale = Vector2(2.7, 2.7)
+texture_normal = ExtResource("4_47ufm")
+texture_pressed = ExtResource("4_47ufm")
+action = "pause"
